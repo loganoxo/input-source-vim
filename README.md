@@ -18,7 +18,7 @@ echo -n 0 > "$HOME/.input-source-vim/data"
 ## 修改vim配置
 
 ```shell
-" 解决esc后光标左移的问题,自动切换输入法
+" 解决esc后光标左移的问题,自动切换输入法; 这是ideavim的写法,因为ideavim不支持autocmd命令,原生vim中可以用autocmd
 inoremap <silent> <Esc> <Esc>`^:!/Users/logan/.input-source-vim/toggle-normal.sh<CR>
 nnoremap <silent> i :!/Users/logan/.input-source-vim/toggle-insert.sh<CR>i
 nnoremap <silent> I :!/Users/logan/.input-source-vim/toggle-insert.sh<CR>I
