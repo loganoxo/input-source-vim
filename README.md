@@ -36,3 +36,5 @@ nnoremap <silent> A :!/Users/logan/.input-source-vim/toggle-insert.sh<CR>A
 
 
 ## ps: 文件 `input-source.scpt` 为模拟按键的AppleScript,若需要修改默认快捷键,需要用MacOS的脚本编辑器打开; 或者直接写在shell脚本里,写法google一下
+
+![c.png](images/c.png)
