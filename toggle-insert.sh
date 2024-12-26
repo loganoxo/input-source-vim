@@ -3,7 +3,7 @@ set -eu
 DATA_FILE="$HOME/.input-source-vim/data"
 INPUT_SOURCE_FLAG="0"
 DATA="0"
-if [ -f "$DATA_FILE" ]; then
+if [ -r "$DATA_FILE" ]; then
     DATA=$(cat "$DATA_FILE")
     if [[ $(defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleCurrentKeyboardLayoutInputSourceID) =~ com.apple.keylayout.ABC ]] ; then
         INPUT_SOURCE_FLAG="0"

@@ -7,6 +7,6 @@ if ! [[ $(defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleCur
     # input-source.scpt can be open by MacOs script-editor.app
     osascript "$HOME/.input-source-vim/input-source.scpt"
 fi
-if [ -f "$DATA_FILE" ]; then
+if [ -w "$DATA_FILE" ]; then
     echo -n "$DATA" > "$DATA_FILE"
 fi
